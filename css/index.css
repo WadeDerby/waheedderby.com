@@ -5,26 +5,28 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  background-position: center center;
+  background-attachment: fixed;
   font-family: Segoe UI, open sans, roboto;
   color: #222;
 }
 
-/* line 12, ../sass/index.scss */
+/* line 14, ../sass/index.scss */
 .overlay {
   display: block;
   width: 100%;
 }
-/* line 16, ../sass/index.scss */
+/* line 18, ../sass/index.scss */
 .overlay .logo {
   width: 100%;
   text-align: center;
   padding-top: 10vh;
 }
-/* line 21, ../sass/index.scss */
+/* line 23, ../sass/index.scss */
 .overlay .logo img {
   width: 80px;
 }
-/* line 26, ../sass/index.scss */
+/* line 28, ../sass/index.scss */
 .overlay .main-text {
   text-align: left;
   font-size: 3em;
@@ -32,11 +34,11 @@ body {
   width: 70%;
   margin: 20px auto;
 }
-/* line 33, ../sass/index.scss */
+/* line 35, ../sass/index.scss */
 .overlay .main-text span {
   display: block;
 }
-/* line 38, ../sass/index.scss */
+/* line 40, ../sass/index.scss */
 .overlay .sub-text {
   color: #8d8d8d;
   margin: 10px 0;
@@ -47,23 +49,23 @@ body {
   width: 70%;
   margin: 20px auto;
 }
-/* line 50, ../sass/index.scss */
+/* line 52, ../sass/index.scss */
 .overlay .social {
   text-align: center;
 }
-/* line 52, ../sass/index.scss */
+/* line 54, ../sass/index.scss */
 .overlay .social a {
   text-decoration: none;
   color: black;
   width: 34px;
   height: 34px;
 }
-/* line 59, ../sass/index.scss */
+/* line 61, ../sass/index.scss */
 .overlay .social a:hover .font-icon {
   color: #222;
   background-color: white;
 }
-/* line 66, ../sass/index.scss */
+/* line 68, ../sass/index.scss */
 .overlay .social .font-icon {
   background-color: #222;
   color: white;

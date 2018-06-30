@@ -1911,7 +1911,7 @@
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
+		background-color: rgba(167,0,100, .7);
 		border: 0;
 		cursor: pointer;
 		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
@@ -1929,7 +1929,9 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #9ececc;
+			    background: transparent;
+			    color: rgba(167,0,100,0.6) !important;
+   				border: 3px solid rgba(167,0,100, .7);
 		}
 
 		input[type="button"]:active,
@@ -1937,7 +1939,7 @@
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #7eaeac;
+			background-color: rgba(167,0,100, .7);
 		}
 
 /* Item */
@@ -1995,7 +1997,7 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
+		background: rgb(167,0,100);
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -2032,7 +2034,7 @@
 		}
 
 			#header .icons a {
-				color: #41484c;
+				color: rgba(255,255,255,0.5);
 				-moz-transition: color 0.35s ease-in-out;
 				-webkit-transition: color 0.35s ease-in-out;
 				-ms-transition: color 0.35s ease-in-out;
@@ -2099,7 +2101,6 @@
 				#nav ul li a span:before {
 					position: absolute;
 					left: 0;
-					color: #41484c;
 					text-align: center;
 					width: 1.25em;
 					line-height: 1.75em;
@@ -2112,7 +2113,7 @@
 			}
 
 				#nav ul li a.active span:before {
-					color: #e27689;
+					color: #fff;
 				}
 
 /* Footer */
@@ -2176,11 +2177,10 @@
 
 				#main > section.dark a {
 					color: #fff;
-					border-color: inherit;
 				}
 
 					#main > section.dark a:hover {
-						border-bottom-color: rgba(255, 255, 255, 0);
+						/*border-bottom-color: rgba(255, 255, 255, 0);*/
 					}
 
 			#main > section.cover {
@@ -2387,7 +2387,7 @@
 				width: 275px;
 				z-index: 10002;
 				width: 275px;
-				background: #222729 url("images/overlay.png");
+				background: rgb(167,0,100);
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 			}
 

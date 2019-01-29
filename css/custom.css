@@ -1,0 +1,35 @@
+#avatar {
+    max-width: 100%;
+    border: 5px solid #cacaca;
+    border-radius: 50%;
+    height: 200px;
+}
+
+.navbar{
+    background: #4641ff;
+}
+
+.__logo{
+    width: 150px;
+}
+
+.hero__overlay--gradient {
+    background: -webkit-gradient(linear,left top,right top,from(#6c63ff),to(#4641ff));
+    background: linear-gradient(90deg,#6c63ff,#4641ff);
+}
+.hero__overlay{
+    background: #4641ff;
+}
+
+.cta--reverse {
+    background: -webkit-gradient(linear,right top,left top,from(#6c63ff),to(#4641ff));
+    background: linear-gradient(270deg,#6c63ff,#4641ff);
+}
+
+.cta {
+    background: -webkit-gradient(linear,left top,right top,from(#6c63ff),to(#4641ff));
+    background: linear-gradient(90deg,#6c63ff,#4641ff);
+    color: #fff;
+    padding: 48pt 0;
+    text-align: center;
+}

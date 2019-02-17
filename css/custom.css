@@ -21,6 +21,17 @@
     background: #4641ff;
 }
 
+a.link__dotted{
+    text-decoration: none;
+    color: inherit;
+    border-bottom: dotted 1px rgba(188, 188, 188, 0.8);
+    -moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    -webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    -ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    outline: 0;
+}
+
 .cta--reverse {
     background: -webkit-gradient(linear,right top,left top,from(#6c63ff),to(#4641ff));
     background: linear-gradient(270deg,#6c63ff,#4641ff);

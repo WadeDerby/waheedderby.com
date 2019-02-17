@@ -1,3 +1,5 @@
+/* @import url("font-awesome.min.css"); */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 #avatar {
     max-width: 100%;
     border: 5px solid #cacaca;
@@ -43,4 +45,20 @@ a.link__dotted{
     color: #fff;
     padding: 48pt 0;
     text-align: center;
+}
+
+.icons {
+    list-style: none;
+}
+
+.icons li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 24px;
+    font-weight: 100;
+    color: rgba(250,250,250,.7);
+}
+
+.hero__content{
+    padding: 70px 0;
 }

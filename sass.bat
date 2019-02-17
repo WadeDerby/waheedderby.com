@@ -1,1 +1,0 @@
-compass watch --css-dir css --import-path sass

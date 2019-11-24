@@ -6,7 +6,9 @@
     border-radius: 50%;
     height: 200px;
 }
-
+body{
+    height: 100vh;
+}
 .navbar{
     background: #4641ff;
 }
@@ -61,4 +63,10 @@ a.link__dotted{
 
 .hero__content{
     padding: 70px 0;
+}
+
+@media (min-width: 992px) {
+    body{
+        height: 100%;
+    } 
 }

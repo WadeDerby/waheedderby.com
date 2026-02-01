@@ -1,19 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta class="utf-8" />
+    <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <title>Waheed Derby | Web Developer</title>
+    <title>Waheed Derby | Software Engineer</title>
     <meta
       name="description"
-      content="Waheed Derby is a full stack web developer and designer with over four years of professional experience."
+      content="Waheed Derby is a software engineer with over 10 years of experience, an avid traveller, entrepreneur, and basketball enthusiast."
     />
-    <meta name="keywords" content="web dev, frontend, website development" />
+    <meta
+      name="keywords"
+      content="software engineer, Waheed Derby, developer, traveller, entrepreneur"
+    />
     <meta name="robots" content="index,follow" />
-    <meta property="og:title" content="Waheed Derby | Web Developer" />
+    <meta property="og:title" content="Waheed Derby | Software Engineer" />
     <meta property="og:type" content="website" />
     <meta http-equiv="cache-control" content="no-cache" />
     <meta property="og:url" content="http://waheedderby.com" />
@@ -21,19 +24,24 @@
     <meta property="og:site_name" content="Waheed Derby" />
     <meta
       property="og:description"
-      content="Waheed Derby is a full stack web developer and designer"
+      content="Software engineer with 10+ years of experience, avid traveller, entrepreneur, and basketball enthusiast."
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/revamp.css" />
 
-    <!-- Favicon here -->
+    <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -103,93 +111,265 @@
       sizes="16x16"
       href="images/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
+    <link rel="manifest" href="images/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#0B1120" />
+    <meta name="theme-color" content="#0B1120" />
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("waheedderby-theme") === "light") {
+            document.documentElement.setAttribute("data-theme", "light");
+            var m = document.querySelector('meta[name="theme-color"]');
+            if (m) m.setAttribute("content", "#FFFFFF");
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
 
   <body>
-    <!-- Hero(extended) navbar -->
-    <div class="navbar navbar--extended">
-      <nav class="nav__mobile"></nav>
-      <div class="container">
-        <div class="navbar__inner">
-          <a href="index.html" class="navbar__logo">
-            <img class="__logo" src="images/logo.png" />
-          </a>
+    <header class="site-header" id="header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo-link" aria-label="Waheed Derby home">
+          <img class="logo-img" src="images/logo.png" alt="Waheed Derby" />
+        </a>
+        <div class="header-right">
+          <nav class="nav-main" aria-label="Main navigation">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#connect" class="nav-link">Connect</a>
+          </nav>
+          <button
+            type="button"
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Switch to light theme"
+            title="Switch to light theme"
+          >
+            <i
+              class="fa fa-sun-o theme-icon theme-icon-light"
+              aria-hidden="true"
+            ></i>
+            <i
+              class="fa fa-moon-o theme-icon theme-icon-dark"
+              aria-hidden="true"
+            ></i>
+          </button>
         </div>
       </div>
-    </div>
-    <!-- Hero unit -->
-    <div class="hero">
-      <div class="hero__overlay hero__overlay--gradient"></div>
-      <div class="hero__mask"></div>
-      <div class="hero__inner">
-        <div class="container">
-          <div class="hero__content">
-            <div class="hero__content__inner" id="navConverter">
-              <img id="avatar" src="./images/pp.png" alt="profile_picture" />
-              <h1 class="hero__title">
-                Hi! I'm Waheed Derby, <br />a full stack web developer and
-                designer.
-              </h1>
-              <p class="hero__text">
-                I design and build static web sites and data driven web
-                applications.I also write technical articles on my
-                <a class="link__dotted" href="https://blog.waheedderby.com/"
-                  >blog.</a
-                >
-              </p>
-              <a
-                href="https://drive.google.com/file/d/1qyWDTnVte8M_wgUsnK6yTG5iYsS0NJPS/view"
-                class="button button__accent"
-                >View Resume</a
-              >
-              <a
-                href="https://portfolio.waheedderby.com"
-                class="button hero__button"
-                >View Portfolio</a
-              >
+    </header>
 
-              <div class="social">
-                <!-- Social Icons -->
-                <ul class="icons">
-                  <li>
-                    <a href="https://twitter.com/waheedderby" target="_blank">
-                      <i class="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/waheedderby" target="_blank">
-                      <i class="fa fa-github"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/waheedderby/"
-                      target="_blank"
-                    >
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://medium.com/@waheedderby" target="_blank">
-                      <i class="fa fa-medium"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="mailto:derbywaheed@gmail.com?subject=Inquiries">
-                      <i class="fa fa-mail"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <img
+              src="images/pp.png"
+              alt="Waheed Derby"
+              class="hero-avatar"
+              width="160"
+              height="160"
+            />
+            <h1 class="hero-title">
+              <span class="hero-greeting">Hi, I'm</span>
+              <span class="hero-name">Waheed Derby</span>
+            </h1>
+            <p class="hero-tagline">
+              Software engineer with over a decade of experience.
+              <br class="hero-br" />
+              Avid traveller, entrepreneur, and basketball enthusiast.
+            </p>
           </div>
         </div>
+        <div class="hero-scroll" aria-hidden="true">
+          <span class="hero-scroll-text">Scroll</span>
+          <span class="hero-scroll-line"></span>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="section-title">Who I Am</h2>
+          <p class="section-intro">
+            I build things with code, explore the world, run ventures, and spend
+            my free time on the court.
+          </p>
+          <div class="pillars">
+            <article class="pillar">
+              <div class="pillar-icon" aria-hidden="true">
+                <i class="fa fa-code" aria-hidden="true"></i>
+              </div>
+              <h3 class="pillar-title">Software Engineer</h3>
+              <p class="pillar-text">
+                Over 10 years building and shipping software—from web apps to
+                systems that scale. I design and build data-driven applications
+                and love writing about tech on my
+                <a
+                  href="https://blog.waheedderby.com/"
+                  class="link-inline"
+                  target="_blank"
+                  rel="noopener"
+                  >blog</a
+                >.
+              </p>
+            </article>
+            <article class="pillar">
+              <div class="pillar-icon" aria-hidden="true">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+              </div>
+              <h3 class="pillar-title">Avid Traveller</h3>
+              <p class="pillar-text">
+                I believe the best ideas come from new places and perspectives.
+                Travel shapes how I think, work, and connect with people
+                everywhere.
+              </p>
+            </article>
+            <article class="pillar">
+              <div class="pillar-icon" aria-hidden="true">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+              </div>
+              <h3 class="pillar-title">Entrepreneur</h3>
+              <p class="pillar-text">
+                Beyond engineering, I’m involved in ventures that turn ideas
+                into reality. I care about building things that matter and last.
+              </p>
+            </article>
+            <article class="pillar">
+              <div class="pillar-icon" aria-hidden="true">
+                <i class="fa fa-dribbble" aria-hidden="true"></i>
+              </div>
+              <h3 class="pillar-title">Basketball</h3>
+              <p class="pillar-text">
+                When I’m not coding or travelling, you’ll find me on the court.
+                Basketball is my hobby, my workout, and my way to stay sharp.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="connect" id="connect">
+        <div class="container">
+          <h2 class="section-title section-title-light">Let’s Connect</h2>
+          <p class="connect-intro">
+            Open to collaborations, conversations, and new projects. Reach out
+            or find me online.
+          </p>
+          <div class="connect-actions">
+            <a
+              href="https://blog.waheedderby.com/"
+              class="btn btn-outline-light"
+              target="_blank"
+              rel="noopener"
+              >Blog</a
+            >
+          </div>
+          <ul class="social-list" aria-label="Social links">
+            <li>
+              <a
+                href="https://twitter.com/waheedderby"
+                target="_blank"
+                rel="noopener"
+                aria-label="Twitter"
+              >
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/waheedderby"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+              >
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/waheedderby/"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+              >
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:derbywaheed@gmail.com?subject=Inquiries"
+                aria-label="Email"
+              >
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="footer-text">© <span id="year"></span> Waheed Derby</p>
       </div>
-    </div>
-    <!-- <script src='js/app.min.js'></script> -->
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Theme toggle
+      var THEME_KEY = "waheedderby-theme";
+      var html = document.documentElement;
+      var themeToggle = document.getElementById("theme-toggle");
+      var themeMeta = document.querySelector('meta[name="theme-color"]');
+
+      function getStoredTheme() {
+        try {
+          return localStorage.getItem(THEME_KEY) || "dark";
+        } catch (e) {
+          return "dark";
+        }
+      }
+
+      function setTheme(theme) {
+        html.setAttribute("data-theme", theme);
+        if (themeToggle) {
+          themeToggle.setAttribute(
+            "aria-label",
+            theme === "dark" ? "Switch to light theme" : "Switch to dark theme",
+          );
+          themeToggle.setAttribute(
+            "title",
+            theme === "dark" ? "Switch to light theme" : "Switch to dark theme",
+          );
+        }
+        if (themeMeta)
+          themeMeta.setAttribute(
+            "content",
+            theme === "dark" ? "#0B1120" : "#FFFFFF",
+          );
+        try {
+          localStorage.setItem(THEME_KEY, theme);
+        } catch (e) {}
+      }
+
+      if (themeToggle) {
+        var initial = getStoredTheme();
+        setTheme(initial);
+        themeToggle.addEventListener("click", function () {
+          var next =
+            html.getAttribute("data-theme") === "light" ? "dark" : "light";
+          setTheme(next);
+        });
+      }
+
+      // Header background on scroll
+      var header = document.getElementById("header");
+      if (header) {
+        window.addEventListener("scroll", function () {
+          header.classList.toggle("is-scrolled", window.scrollY > 50);
+        });
+      }
+    </script>
   </body>
 </html>
